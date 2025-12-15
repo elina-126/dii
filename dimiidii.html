@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		body{overflow: auto;}
+		section{width: 500px;
+			background: darkblue;
+			padding: 200px 100px;
+			color: white;
+			position: relative;
+			margin-left: 100px;
+			margin-right: 100px;
+			perspective: 100px;
+			perspective-origin: left 300px top 200;
+			animation: lr 1s infinite linear alternate;
+		}
+		
+				.airpods{position: absolute;
+					left: 334px; top:163px;
+					transform: rotate(316deg);
+					z-index: 1005;
+					animation: rot 2s infinite linear forwards;}
+				h2{z-index: 10000;font-size: 4rem; color: red;}	
+
+			@keyframes lr{
+				from{left: 0px;}
+				to{left:200px;}
+			}	
+
+			@keyframes rot {
+				from{transform: rotateY(0deg);}
+				to{transform: rotateY(360deg);}
+
+			}	
+
+	</style>
+	<title></title>
+</head>
+<body>
+	<section>
+		<h2>빔 귀여웡</h2>
+		<p>체인소사마! 체인소사마!</p>
+		<img src="airpod.png" class="airpods" width="200px">
+	</section>
+	
+
+</body>
+</html>
